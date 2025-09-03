@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+:root{
+    --color-fondo:#ffffff;
+    --color-titulo:#ff4900;
+    --color-parrafo-1: #0093FF;
+    --color-parrafo-2: #c500ff;
+    --font-size-1:16px;
+    --font-size-2:12px;
+    --font-size-titulo:2rem;
+    --font-family-1: 'Arial';
+    --color-links: #001bff;
+    --color-encabezado: #000000;
+    --color-fuente_encabezado:#ffffff;
+    --color-fondo-tabla:#bec1c3;
+
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th{
+    background-color: var(--color-encabezado);
+    color: var(--color-fuente_encabezado);
+    font-size: 1.5rem ;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+tr:nth-child(2){
+    background-color: #bec1c3;
+    color:#000000;
+    font-size: 1.5rem;
+}
+
+tr:nth-child(3){
+    background-color: #045795;
+    color: var(--color-fuente_encabezado);
+    font-size: 1.5rem;
+}
+
+tr:nth-child(4){
+    background-color: #bec1c3;
+    color:#000000;
+    font-size: 1.5rem;
+}
+
+h2{
+    color:var(--color-titulo);
+    font-size: var(--font-size-titulo);
+}
+
+a {
+    color: var(--color-links);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited { color: #4CAF50; }
+a:hover {
+color: #ff6600;
+text-decoration: underline
+} 
+
+p1{
+    font-size: var(--font-size-1);
+    color:var(--color-parrafo-1);
+    font-family: var(--font-family-1);
+}
+
+p2{
+    font-size: var(--font-size-2);
+    color:var(--color-parrafo-2);
+    font-family: 'Nerko One';
+}
+
+html,body   {
+    margin:0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color:var(--color-encabezado);
+    font-size: var(--font-size-1);
+    font-family: var(--font-family-1);
+}

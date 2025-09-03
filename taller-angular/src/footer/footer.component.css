@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    padding: 10px;
+}
+
+footer div{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
