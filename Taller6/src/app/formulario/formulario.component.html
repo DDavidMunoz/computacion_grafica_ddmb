@@ -1,0 +1,21 @@
+<form [formGroup] = "miFormulario" (ngSubmit)="onSubmit()" class="p-fluid p-formgrid p-grid">
+  <div class="p-field p-col-12">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" type="text" pInputText formControlName="nombre" />
+    <small *ngIf="miFormulario.get('nombre')?.invalid && miFormulario.get('nombre')?.touched" class="p-error">
+      El nombre es obligatorio.
+    </small>
+  </div>
+
+  <div class="p-field p-col-12">
+    <label for="correo">Correo</label>
+    <input id="correo" type="email" pInputText formControlName="correo" />
+    <small *ngIf="miFormulario.get('correo')?.invalid && miFormulario.get('correo')?.touched" class="p-error">
+      Ingresa un correo válido.
+    </small>
+  </div>
+
+  <div class="p-col-12">
+    <button pButton type="submit" label="Enviar" [disabled]="miFormulario.invalid"></button>
+  </div>
+</form>
